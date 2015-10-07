@@ -1,0 +1,43 @@
+.container {
+  font-family: 'PT Serif', serif; }
+
+header {
+  border-bottom: 1px solid #E1E3DF;
+  height: 60px;
+  margin-top: 15px; }
+  header .logo {
+    color: #F56400;
+    font-size: 35px;
+    margin-left: 75px;
+    padding-right: 40px; }
+  header .search-area {
+    display: inline-block;
+    padding: 4px;
+    height: 24px; }
+  header .search-btn {
+    background-color: #34A8C4;
+    color: white;
+    display: inline-block;
+    border: 1px solid #E1E3DF;
+    border-radius: 5px;
+    padding: 5px; }
+  header .right-side {
+    display: inline-block;
+    margin-left: 485px;
+    border-right: 1px solid #E1E3DF;
+    color: #0092B5; }
+    header .right-side .sell {
+      padding: 5px; }
+    header .right-side button {
+      background-color: white;
+      color: #0092B5;
+      border: 1px solid #0092B5;
+      border-radius: 5px;
+      padding: 5px;
+      margin-right: 25px; }
+  header .cart {
+    float: right;
+    margin-right: 30px;
+    color: #888888; }
+    header .cart img {
+      display: block; }
