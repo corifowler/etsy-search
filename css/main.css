@@ -8,7 +8,7 @@ header {
   header .logo {
     color: #F56400;
     font-size: 35px;
-    margin-left: 75px;
+    margin-left: 90px;
     padding-right: 40px; }
   header .search-area {
     display: inline-block;
@@ -41,3 +41,14 @@ header {
     color: #888888; }
     header .cart img {
       display: block; }
+
+.nav-menu {
+  border-bottom: 1px solid #E1E3DF; }
+  .nav-menu nav ul {
+    display: inline-block; }
+  .nav-menu li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 7px;
+    font-size: 14px; }
