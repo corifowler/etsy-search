@@ -1,8 +1,12 @@
 $borderColor: #E1E3DF;
 $blueText: #0092B5;
+$grayBackground: #F5F5F1;
 
 .container {
   font-family: 'PT Serif', serif;
+  background-color: $grayBackground;
+  // margin: 0 auto;
+  // width: 1000px;
 }
 
 // Header Styles
@@ -11,6 +15,7 @@ header {
   border-bottom: 1px solid $borderColor;
   height: 60px;
   margin-top: 15px;
+  background-color: white;
 
   .logo {
     color: #F56400;
@@ -71,6 +76,7 @@ header {
 
 .nav-menu {
   border-bottom: 1px solid $borderColor;
+  background-color: white;
 
   nav ul {
     display: inline-block;
@@ -85,9 +91,64 @@ header {
   }
 }
 
+// Section before results start
 
+.show-results {
+  background-color: $grayBackground;
+  padding: 20px;
 
+  .show {
+    margin-left: 68px;
+  }
 
+  .all-cats {
+    margin-left: 125px;
+  }
+
+  .sort {
+    float: right;
+  }
+}
+
+// Category list
+
+.categories {
+  border: 1px solid $borderColor;
+  border-radius: 3px;
+  width: 220px;
+  margin: 10px 85px;
+  padding: 5px;
+  background-color: white;
+
+  span {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  ul li {
+    list-style: none;
+    padding: 2px;
+    color: $blueText;
+    font-size: 14px;
+  }
+}
+
+// Refine Results Box
+
+.refine-results {
+  border: 1px solid $borderColor;
+  border-radius: 3px;
+  width: 220px;
+  margin: 10px 85px;
+  padding: 5px;
+  background-color: white;
+
+  .item-type li {
+    list-style: none;
+    margin: 0;
+  }
+
+}
 
 
 
