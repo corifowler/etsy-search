@@ -99,7 +99,7 @@ header {
     width: 22px;
     height: 22px;
     border: 1px solid #E1E3DF;
-    border-radius: 2px;
+    border-radius: 4px;
     list-style: none;
     display: inline-block; }
   .refine-results .red {
@@ -118,3 +118,7 @@ header {
     background-color: black; }
   .refine-results .white {
     background-color: white; }
+  .refine-results .order-opts ul {
+    padding-left: 0; }
+    .refine-results .order-opts ul li {
+      list-style: none; }

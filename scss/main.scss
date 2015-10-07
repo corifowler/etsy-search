@@ -160,7 +160,7 @@ header {
     width: 22px;
     height: 22px;
     border: 1px solid $borderColor;
-    border-radius: 2px;
+    border-radius: 4px;
     list-style: none;
     display: inline-block;
   }
@@ -195,6 +195,15 @@ header {
 
   .white {
     background-color: white;
+  }
+
+  .order-opts ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+
   }
 
 }
