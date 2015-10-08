@@ -15,15 +15,20 @@ header {
     padding-right: 40px; }
   header .search-area {
     display: inline-block;
-    padding: 4px;
-    height: 24px; }
+    padding: 0;
+    height: 28px;
+    border: 1px solid #E1E3DF;
+    border-radius: 5px; }
+    header .search-area input {
+      border: none; }
   header .search-btn {
     background-color: #34A8C4;
     color: white;
     display: inline-block;
-    border: 1px solid #E1E3DF;
-    border-radius: 5px;
-    padding: 5px; }
+    border: none;
+    padding: 0;
+    height: 28px;
+    width: 73px; }
   header .right-side {
     display: inline-block;
     margin-left: 485px;
@@ -67,92 +72,111 @@ header {
   .show-results .sort {
     float: right; }
 
-.categories {
-  border: 1px solid #E1E3DF;
-  border-radius: 3px;
-  width: 220px;
-  margin: 10px 85px;
-  padding: 5px;
-  background-color: white; }
-  .categories span {
-    font-weight: bold;
-    font-size: 16px; }
-  .categories ul li {
-    list-style: none;
-    padding: 2px;
-    color: #0092B5;
-    font-size: 14px; }
-
-.refine-results {
-  border: 1px solid #E1E3DF;
-  border-radius: 3px;
-  width: 220px;
-  margin: 10px 85px;
-  padding: 5px;
-  background-color: white; }
-  .refine-results .item-type ul {
-    padding-left: 0; }
-  .refine-results .item-type li {
-    list-style: none; }
-  .refine-results .price input {
-    width: 65px;
+aside {
+  float: left;
+  background-color: #F5F5F1; }
+  aside .categories {
     border: 1px solid #E1E3DF;
     border-radius: 3px;
-    padding: 5px; }
-  .refine-results .price button::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7.5px 0 7.5px 8px;
-    border-color: transparent transparent transparent #555555;
-    top: 9px;
-    left: 13px; }
-  .refine-results .price button {
-    background-color: white;
-    border: 1px solid #E1E3DF;
-    border-radius: 3px;
-    height: 32px;
-    width: 34px;
-    padding: 9px;
-    position: relative; }
-  .refine-results .color-filter ul {
-    padding-left: 0; }
-  .refine-results .color-filter li {
-    width: 22px;
-    height: 22px;
-    border: 1px solid #E1E3DF;
-    border-radius: 4px;
-    list-style: none;
-    display: inline-block; }
-  .refine-results .red {
-    background-color: #F40932; }
-  .refine-results .orange {
-    background-color: #FF7F00; }
-  .refine-results .yellow {
-    background-color: #F3CC09; }
-  .refine-results .green {
-    background-color: #08C209; }
-  .refine-results .blue {
-    background-color: #0ACCF3; }
-  .refine-results .purple {
-    background-color: #A700F7; }
-  .refine-results .black {
-    background-color: black; }
-  .refine-results .white {
+    width: 220px;
+    margin: 10px 85px;
+    padding: 5px;
     background-color: white; }
-  .refine-results .order-opts ul {
-    padding-left: 0; }
-    .refine-results .order-opts ul li {
-      list-style: none; }
-  .refine-results .location ul {
-    padding-left: 0; }
-    .refine-results .location ul li {
-      list-style: none; }
-    .refine-results .location ul li span {
+    aside .categories span {
+      font-weight: bold;
+      font-size: 16px; }
+    aside .categories ul li {
+      list-style: none;
+      padding: 2px;
       color: #0092B5;
+      font-size: 14px; }
+  aside .refine-results {
+    border: 1px solid #E1E3DF;
+    border-radius: 3px;
+    width: 220px;
+    margin: 10px 85px;
+    padding: 5px;
+    background-color: white; }
+    aside .refine-results .item-type ul {
+      padding-left: 0; }
+    aside .refine-results .item-type li {
+      list-style: none; }
+    aside .refine-results .low-price {
+      display: inline-block;
+      border: 1px solid #E1E3DF;
+      border-radius: 2px;
+      padding: 2px;
+      width: 50px; }
+    aside .refine-results .low-price input {
+      width: 27px;
+      border: none;
       padding: 5px;
       font-size: 14px; }
-  .refine-results .ship-to select {
-    margin-bottom: 5px; }
+    aside .refine-results .high-price {
+      display: inline-block;
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      padding: 2px;
+      width: 53px; }
+    aside .refine-results .high-price input {
+      width: 30px;
+      border: none;
+      padding: 5px;
+      font-size: 14px; }
+    aside .refine-results .price button::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7.5px 0 7.5px 8px;
+      border-color: transparent transparent transparent #555555;
+      top: 9px;
+      left: 13px; }
+    aside .refine-results .price button {
+      background-color: white;
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
+      height: 32px;
+      width: 34px;
+      padding: 9px;
+      position: relative; }
+    aside .refine-results .color-filter ul {
+      padding-left: 0; }
+    aside .refine-results .color-filter li {
+      width: 22px;
+      height: 22px;
+      border: 1px solid #E1E3DF;
+      border-radius: 4px;
+      list-style: none;
+      display: inline-block; }
+    aside .refine-results .red {
+      background-color: #F40932; }
+    aside .refine-results .orange {
+      background-color: #FF7F00; }
+    aside .refine-results .yellow {
+      background-color: #F3CC09; }
+    aside .refine-results .green {
+      background-color: #08C209; }
+    aside .refine-results .blue {
+      background-color: #0ACCF3; }
+    aside .refine-results .purple {
+      background-color: #A700F7; }
+    aside .refine-results .black {
+      background-color: black; }
+    aside .refine-results .white {
+      background-color: white; }
+    aside .refine-results .order-opts ul {
+      padding-left: 0; }
+      aside .refine-results .order-opts ul li {
+        list-style: none; }
+    aside .refine-results .location ul {
+      padding-left: 0; }
+      aside .refine-results .location ul li {
+        list-style: none; }
+      aside .refine-results .location ul li span {
+        color: #0092B5;
+        padding: 5px;
+        font-size: 14px; }
+    aside .refine-results .ship-to select {
+      margin-bottom: 5px; }

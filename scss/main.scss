@@ -27,17 +27,24 @@ header {
 
   .search-area {
     display: inline-block;
-    padding: 4px;
-    height: 24px;
+    padding: 0;
+    height: 28px;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+
+    input {
+      border: none;
+    }
   }
 
   .search-btn {
     background-color: #34A8C4;
     color: white;
     display: inline-block;
-    border: 1px solid $borderColor;
-    border-radius: 5px;
-    padding: 5px;
+    border: none;
+    padding: 0;
+    height: 28px;
+    width: 73px;
   }
 
   .right-side {
@@ -111,152 +118,182 @@ header {
   }
 }
 
+
+
 // Category list
 
-.categories {
-  border: 1px solid $borderColor;
-  border-radius: 3px;
-  width: 220px;
-  margin: 10px 85px;
-  padding: 5px;
-  background-color: white;
+aside {
+  float: left;
+  background-color: $grayBackground;
 
-  span {
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  ul li {
-    list-style: none;
-    padding: 2px;
-    color: $blueText;
-    font-size: 14px;
-  }
-}
-
-// Refine Results Box
-
-.refine-results {
-  border: 1px solid $borderColor;
-  border-radius: 3px;
-  width: 220px;
-  margin: 10px 85px;
-  padding: 5px;
-  background-color: white;
-
-  .item-type ul {
-    padding-left: 0;
-  }
-
-  .item-type li {
-    list-style: none;
-  }
-
-  .price input {
-    width: 65px;
+  .categories {
     border: 1px solid $borderColor;
     border-radius: 3px;
+    width: 220px;
+    margin: 10px 85px;
     padding: 5px;
-  }
-
-  .price button::before {
-    content:'';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7.5px 0 7.5px 8px;
-    border-color: transparent transparent transparent #555555;
-    top: 9px;
-    left: 13px;
-
-  }
-
-  .price button {
     background-color: white;
-    border: 1px solid $borderColor;
-    border-radius: 3px;
-    height: 32px;
-    width: 34px;
-    padding: 9px;
-    position: relative;
-  }
 
-
-  .color-filter ul {
-    padding-left: 0;
-  }
-
-  .color-filter li {
-    width: 22px;
-    height: 22px;
-    border: 1px solid $borderColor;
-    border-radius: 4px;
-    list-style: none;
-    display: inline-block;
-  }
-
-  .red {
-    background-color: #F40932;
-  }
-
-  .orange {
-    background-color: #FF7F00;
-  }
-
-  .yellow {
-    background-color: #F3CC09;
-  }
-
-  .green {
-    background-color: #08C209;
-  }
-
-  .blue {
-    background-color: #0ACCF3;
-  }
-
-  .purple {
-    background-color: #A700F7;
-  }
-
-  .black {
-    background-color: black;
-  }
-
-  .white {
-    background-color: white;
-  }
-
-  .order-opts ul {
-    padding-left: 0;
-
-    li {
-      list-style: none;
+    span {
+      font-weight: bold;
+      font-size: 16px;
     }
 
-  }
-
-  .location ul {
-    padding-left: 0;
-
-    li {
+    ul li {
       list-style: none;
-    }
-
-    li span {
+      padding: 2px;
       color: $blueText;
-      padding: 5px;
       font-size: 14px;
     }
   }
 
-  .ship-to select {
-    margin-bottom: 5px;
+  // Refine Results Box
+
+  .refine-results {
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    width: 220px;
+    margin: 10px 85px;
+    padding: 5px;
+    background-color: white;
+
+    .item-type ul {
+      padding-left: 0;
+    }
+
+    .item-type li {
+      list-style: none;
+    }
+
+    .low-price {
+      display: inline-block;
+      border: 1px solid $borderColor;
+      border-radius: 2px;
+      padding: 2px;
+      width: 50px;
+    }
+    
+    .low-price input {
+        width: 27px;
+        border: none;
+        padding: 5px;
+        font-size: 14px;
+      }
+
+    .high-price {
+      display: inline-block;
+      border: 1px solid $borderColor;
+      border-radius: 3px;
+      padding: 2px;
+      width: 53px;
+    }
+    
+    .high-price input {
+        width: 30px;
+        border: none;
+        padding: 5px;
+        font-size: 14px;
+      }
+
+
+    .price button::before {
+      content:'';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7.5px 0 7.5px 8px;
+      border-color: transparent transparent transparent #555555;
+      top: 9px;
+      left: 13px;
+
+    }
+
+    .price button {
+      background-color: white;
+      border: 1px solid $borderColor;
+      border-radius: 3px;
+      height: 32px;
+      width: 34px;
+      padding: 9px;
+      position: relative;
+    }
+
+
+    .color-filter ul {
+      padding-left: 0;
+    }
+
+    .color-filter li {
+      width: 22px;
+      height: 22px;
+      border: 1px solid $borderColor;
+      border-radius: 4px;
+      list-style: none;
+      display: inline-block;
+    }
+
+    .red {
+      background-color: #F40932;
+    }
+
+    .orange {
+      background-color: #FF7F00;
+    }
+
+    .yellow {
+      background-color: #F3CC09;
+    }
+
+    .green {
+      background-color: #08C209;
+    }
+
+    .blue {
+      background-color: #0ACCF3;
+    }
+
+    .purple {
+      background-color: #A700F7;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .order-opts ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+      }
+
+    }
+
+    .location ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+      }
+
+      li span {
+        color: $blueText;
+        padding: 5px;
+        font-size: 14px;
+      }
+    }
+
+    .ship-to select {
+      margin-bottom: 5px;
+    }
+
   }
-
 }
-
 
 
 

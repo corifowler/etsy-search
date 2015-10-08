@@ -12,10 +12,9 @@
       <span class="logo">Etsy</span>
       <div class="search-area">
         <form method="get" action="/">
-          <input type="text" name="Search" id="Search">
+          <input type="text" name="Search" id="Search"><button class="search-btn">Search</button>
         </form>
       </div>
-      <button class="search-btn">Search</button>
       <div class='right-side'>
         <span class="sell">Sell on Etsy</span>
         <span class="sell">Register</span>
@@ -45,86 +44,95 @@
       <span class="all-cats">All Categories > "hufflepuff" (4,887 Results)</span>
       <span class="sort">Sort By: Relevancy</span>
     </div>
-    <div class="categories">
-      <span>All Categories</span>
-      <ul>
-        <li>Jewelry</li>
-        <li>Accessories</li>
-        <li>Clothing</li>
-        <li>Home & Living</li>
-        <li>Art & Collectibles</li>
-        <li>Bags & Purses</li>
-        <li>Paper & Party Supplies</li>
-        <li>Bath & Beauty</li>
-        <li>Craft Supplies & Tools</li>
-        <li>Books, Movies, & Music</li>
-        <li>Toys & Games</li>
-        <li>Electronics & Accessories</li>
-        <li>Weddings</li>
-        <li>Pet Supplies</li>
-        <li>Shoes</li>
-      </ul>
-    </div>
-    <div class="refine-results">
-      <section class="item-type">
-        Item Type
+    <aside>
+      <div class="categories">
+        <span>All Categories</span>
         <ul>
-          <li><input type="radio" value="All Items">All Items</li>
-          <li><input type="radio" value="Handmade">Handmade</li>
-          <li><input type="radio" value="Vintage">Vintage</li>
+          <li>Jewelry</li>
+          <li>Accessories</li>
+          <li>Clothing</li>
+          <li>Home & Living</li>
+          <li>Art & Collectibles</li>
+          <li>Bags & Purses</li>
+          <li>Paper & Party Supplies</li>
+          <li>Bath & Beauty</li>
+          <li>Craft Supplies & Tools</li>
+          <li>Books, Movies, & Music</li>
+          <li>Toys & Games</li>
+          <li>Electronics & Accessories</li>
+          <li>Weddings</li>
+          <li>Pet Supplies</li>
+          <li>Shoes</li>
         </ul>
-      </section>
-      <hr>
-      <section class="price">
-        Price
-        <br>
-        <input type="text" placeholder="Low"> <span>to</span> <input type="text" placeholder="High">
-        <button></button>
-      </section>
-      <hr>
-      <section class="color-filter">
-        Filter by Color
-        <ul>
-          <li class="red"></li>
-          <li class="orange"></li>
-          <li class="yellow"></li>
-          <li class="green"></li>
-          <li class="blue"></li>
-          <li class="purple"></li>
-          <li class="black"></li>
-          <li class="white"></li>
-        </ul>
-      </section>
-      <hr>
-      <section class="order-opts">
-        Ordering Options
-        <ul>
-          <li><input type="checkbox" value="giftcards">Accepts Etsy Gift Cards</li>
-          <li><input type="checkbox" value="customizable">Customizable</li>
-        </ul>
-      </section>
-      <hr>
-      <section class="location">
-        Shop Location
-        <ul>
-          <li><input type="radio" value="anywhere">Anywhere</li>
-          <li><input type="radio" value="United States">United States</li>
-          <li><span>Choose a Custom Location</span></li>
-        </ul>
-      </section>
-      <hr>
-      <section class="ship-to">
-        Ship to
-        <br>
-        <select>
-          <option>United States</option>
-          <option>Canada</option>
-          <option>Mexico</option>
-          <option>Other Countries</option>
-        </select>
-      </section>
-    </div>
-
+      </div>
+      <div class="refine-results">
+        <section class="item-type">
+          Item Type
+          <ul>
+            <li><input type="radio" value="All Items">All Items</li>
+            <li><input type="radio" value="Handmade">Handmade</li>
+            <li><input type="radio" value="Vintage">Vintage</li>
+          </ul>
+        </section>
+        <hr>
+        <section class="price">
+          Price
+          <br>
+          <div class="low-price">
+          $
+          <input type="text" placeholder="Low">
+          </div> 
+          <span>to</span>
+          <div class="high-price">
+          $ 
+          <input type="text" placeholder="High">
+          </div>
+          <button></button>
+        </section>
+        <hr>
+        <section class="color-filter">
+          Filter by Color
+          <ul>
+            <li class="red"></li>
+            <li class="orange"></li>
+            <li class="yellow"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="purple"></li>
+            <li class="black"></li>
+            <li class="white"></li>
+          </ul>
+        </section>
+        <hr>
+        <section class="order-opts">
+          Ordering Options
+          <ul>
+            <li><input type="checkbox" value="giftcards">Accepts Etsy Gift Cards</li>
+            <li><input type="checkbox" value="customizable">Customizable</li>
+          </ul>
+        </section>
+        <hr>
+        <section class="location">
+          Shop Location
+          <ul>
+            <li><input type="radio" value="anywhere">Anywhere</li>
+            <li><input type="radio" value="United States">United States</li>
+            <li><span>Choose a Custom Location</span></li>
+          </ul>
+        </section>
+        <hr>
+        <section class="ship-to">
+          Ship to
+          <br>
+          <select>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+            <option>Other Countries</option>
+          </select>
+        </section>
+      </div>
+    </aside>
 
 
     
