@@ -188,8 +188,7 @@
       .container aside .refine-results .ship-to select {
         margin-bottom: 5px; }
   .container .results-area {
-    margin-left: 340px;
-    border-bottom: 1px solid #E1E3DF; }
+    margin-left: 340px; }
     .container .results-area .item-display {
       border: 1px solid #E1E3DF;
       border-radius: 3px;
@@ -200,8 +199,7 @@
       font-size: 13px;
       background-color: white;
       margin: 5px;
-      position: relative;
-      z-index: 0; }
+      position: relative; }
       .container .results-area .item-display img {
         width: 225px; }
       .container .results-area .item-display .title {
@@ -223,18 +221,22 @@
       .container .results-area .item-display .heart {
         height: 15px;
         width: 15px;
-        z-index: -5;
+        z-index: -1;
         background-color: white;
         border: 1px solid #E1E3DF;
+        border-radius: 3px;
+        position: absolute;
+        right: 22px;
+        top: 2px; }
+      .container .results-area .item-display .hamburger {
+        height: 15px;
+        width: 15px;
+        z-index: -1;
+        background-color: white;
+        border: 1px solid #E1E3DF;
+        border-radius: 3px;
         position: absolute;
         right: 3px;
         top: 2px; }
       .container .results-area .item-display .show {
-        height: 15px;
-        width: 15px;
-        z-index: 10;
-        background-color: white;
-        border: 1px solid #E1E3DF;
-        position: absolute;
-        right: 3px;
-        top: 2px; }
+        z-index: 10 !important; }

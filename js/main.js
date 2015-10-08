@@ -12,10 +12,18 @@ _.each( etsy.results, function(item){
   $('.results-area').append(itemInfo);
 });
 
-// make hover images appear
+// make hover images appear & disappear
 
-$('.item-display').on('hover', function(){
-  $('.heart').removeClass('.heart').addClass('.show');  
+$('.results-area').on('mouseenter', '.item-display', function(){
+   $(this).find('.heart').toggleClass('show');
+   $(this).find('.hamburger').toggleClass('show');
+    console.log('maybe toggling?');
+});
+
+$('.results-area').on('mouseleave', '.item-display', function(){
+   $(this).find('.heart').toggleClass('show');
+      $(this).find('.hamburger').toggleClass('show');
+    console.log('maybe toggling?');
 });
 
 }());
