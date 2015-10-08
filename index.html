@@ -133,15 +133,23 @@
         </section>
       </div>
     </aside>
+    <div class="results-area"></div>
 
-
-    
-
+    <script type="text/template" id="itemTemplate">
+      <div class="item-display">
+        <img src=<%= Images[0].url_170x135 %>>
+        <div class="title"><%= title %></div>
+        <div class="seller"><%= Shop.shop_name %></div>
+        <div class="the-price"><span>$</span><%= price %></div>
+      </div>
+    </script>
 
 
   </div>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="js/etsy.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
