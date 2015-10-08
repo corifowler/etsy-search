@@ -5,6 +5,7 @@ $grayBackground: #F5F5F1;
 .container {
   font-family: 'PT Serif', serif;
   background-color: $grayBackground;
+  border-bottom: 1px solid $grayBackground;
   // margin: 0 auto;
   // width: 1000px;
 }
@@ -151,6 +152,36 @@ header {
     list-style: none;
   }
 
+  .price input {
+    width: 65px;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+  .price button::before {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 8px;
+    border-color: transparent transparent transparent #555555;
+    top: 9px;
+    left: 13px;
+
+  }
+
+  .price button {
+    background-color: white;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    height: 32px;
+    width: 34px;
+    padding: 9px;
+    position: relative;
+  }
+
 
   .color-filter ul {
     padding-left: 0;
@@ -204,6 +235,24 @@ header {
       list-style: none;
     }
 
+  }
+
+  .location ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+
+    li span {
+      color: $blueText;
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .ship-to select {
+    margin-bottom: 5px;
   }
 
 }
