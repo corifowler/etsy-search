@@ -1,7 +1,6 @@
 (function () {
 
 var templateString = $('#itemTemplate').text();
-console.log(templateString);
 
 var renderTemplate = _.template(templateString);
 
@@ -13,5 +12,10 @@ _.each( etsy.results, function(item){
   $('.results-area').append(itemInfo);
 });
 
+// make hover images appear
+
+$('.item-display').on('hover', function(){
+  $('.heart').removeClass('.heart').addClass('.show');  
+});
 
 }());
