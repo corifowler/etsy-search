@@ -20,7 +20,9 @@
       border: 1px solid #E1E3DF;
       border-radius: 5px; }
       .container header .search-area input {
-        border: none; }
+        border: none;
+        width: 189px;
+        font-size: 14px; }
     .container header .search-btn {
       background-color: #34A8C4;
       color: white;
@@ -31,7 +33,7 @@
       width: 73px; }
     .container header .right-side {
       display: inline-block;
-      margin-left: 430px;
+      margin-left: 305px;
       border-right: 1px solid #E1E3DF;
       font-size: 15px;
       color: #0092B5; }
@@ -46,7 +48,7 @@
         margin-right: 25px; }
     .container header .cart {
       float: right;
-      margin-right: 146px;
+      margin-right: 232px;
       color: #888888;
       font-size: 15px; }
       .container header .cart img {
@@ -62,16 +64,17 @@
       list-style: none;
       display: inline-block;
       margin-left: 40px;
-      padding: 7px;
-      font-size: 14px; }
+      font-size: 12px;
+      padding: 5px; }
   .container .show-results {
     background-color: #F5F5F1;
     padding: 15px;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: bold; }
     .container .show-results .show {
       margin-left: 68px; }
     .container .show-results .all-cats {
-      margin-left: 136px; }
+      margin-left: 155px; }
       .container .show-results .all-cats a {
         text-decoration: none;
         color: #0092B5; }
@@ -100,6 +103,10 @@
         color: #0092B5;
         font-size: 14px;
         margin-left: -30px; }
+    .container aside .refine-search {
+      margin-left: 86px;
+      font-weight: bold;
+      font-size: 14px; }
     .container aside .refine-results {
       border: 1px solid #E1E3DF;
       border-radius: 3px;
@@ -111,7 +118,8 @@
       .container aside .refine-results .item-type ul {
         padding-left: 0; }
       .container aside .refine-results .item-type li {
-        list-style: none; }
+        list-style: none;
+        color: #0092B5; }
       .container aside .refine-results .item-type input {
         margin-right: 5px; }
       .container aside .refine-results .low-price {
@@ -195,8 +203,19 @@
           font-size: 14px; }
         .container aside .refine-results .location ul li input {
           margin-right: 5px; }
+        .container aside .refine-results .location ul li a {
+          text-decoration: none;
+          color: #0092B5; }
       .container aside .refine-results .ship-to select {
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        -webkit-appearance: none;
+        border: 1px solid #E1E3DF;
+        border-radius: 0;
+        width: 180px;
+        padding: 5px;
+        background-color: white;
+        margin-top: 5px;
+        position: relative; }
   .container .results-area {
     margin-left: 340px; }
     .container .results-area .item-display {
@@ -219,10 +238,15 @@
         overflow: hidden;
         padding: 3px;
         margin-left: 2px; }
+        .container .results-area .item-display .title a {
+          text-decoration: none;
+          color: black; }
       .container .results-area .item-display .seller {
         display: inline-block;
-        color: #AAAAAA;
         margin-left: 5px; }
+        .container .results-area .item-display .seller a {
+          text-decoration: none;
+          color: #AAAAAA; }
       .container .results-area .item-display .the-price {
         display: inline-block;
         float: right;
@@ -250,3 +274,59 @@
         top: 2px; }
       .container .results-area .item-display .show {
         z-index: 10 !important; }
+  .container .related-stuff {
+    display: inline-block;
+    margin-left: 345px;
+    font-size: 14px; }
+    .container .related-stuff span {
+      display: block; }
+    .container .related-stuff ul {
+      display: inline-block;
+      padding-left: 0;
+      padding-right: 40px; }
+    .container .related-stuff li {
+      list-style: none;
+      color: #0092B5; }
+    .container .related-stuff .last-list {
+      vertical-align: top; }
+    .container .related-stuff a {
+      text-decoration: none;
+      color: #0092B5; }
+    .container .related-stuff .page-btns ul {
+      display: inline-block;
+      padding-right: 0;
+      border: 1px solid #E1E3DF;
+      border-radius: 5px; }
+      .container .related-stuff .page-btns ul li {
+        color: black;
+        font-weight: bold;
+        font-size: 17px;
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid #E1E3DF; }
+      .container .related-stuff .page-btns ul .no-border {
+        border: none; }
+      .container .related-stuff .page-btns ul li:hover {
+        cursor: pointer;
+        background-color: white; }
+  .container .subscribe {
+    text-align: center;
+    border-top: 1px solid #E1E3DF;
+    border-bottom: 1px solid #E1E3DF;
+    font-size: 14px;
+    padding: 20px; }
+    .container .subscribe form {
+      display: inline-block; }
+    .container .subscribe input {
+      border: 1px solid #E1E3DF;
+      border-radius: 5px;
+      padding: 5px;
+      width: 212px; }
+    .container .subscribe button {
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: #34A8C4;
+      border: 1px solid #2E98B1;
+      border-radius: 5px;
+      padding: 7px; }
