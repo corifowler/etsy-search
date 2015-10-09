@@ -66,11 +66,15 @@
       font-size: 14px; }
   .container .show-results {
     background-color: #F5F5F1;
-    padding: 15px; }
+    padding: 15px;
+    font-size: 14px; }
     .container .show-results .show {
       margin-left: 68px; }
     .container .show-results .all-cats {
       margin-left: 136px; }
+      .container .show-results .all-cats a {
+        text-decoration: none;
+        color: #0092B5; }
     .container .show-results .sort {
       float: right;
       margin-right: 208px; }
@@ -108,6 +112,8 @@
         padding-left: 0; }
       .container aside .refine-results .item-type li {
         list-style: none; }
+      .container aside .refine-results .item-type input {
+        margin-right: 5px; }
       .container aside .refine-results .low-price {
         display: inline-block;
         border: 1px solid #E1E3DF;
@@ -176,6 +182,8 @@
         .container aside .refine-results .order-opts ul li {
           list-style: none;
           color: #0092B5; }
+          .container aside .refine-results .order-opts ul li input {
+            margin-right: 5px; }
       .container aside .refine-results .location ul {
         padding-left: 0; }
         .container aside .refine-results .location ul li {
@@ -185,6 +193,8 @@
           color: #0092B5;
           padding: 5px;
           font-size: 14px; }
+        .container aside .refine-results .location ul li input {
+          margin-right: 5px; }
       .container aside .refine-results .ship-to select {
         margin-bottom: 5px; }
   .container .results-area {
@@ -211,13 +221,13 @@
         margin-left: 2px; }
       .container .results-area .item-display .seller {
         display: inline-block;
-        padding: 3px;
-        color: #AAAAAA; }
+        color: #AAAAAA;
+        margin-left: 5px; }
       .container .results-area .item-display .the-price {
         display: inline-block;
         float: right;
-        padding: 3px;
-        color: #7EC34B; }
+        color: #7EC34B;
+        margin-right: 5px; }
       .container .results-area .item-display .heart {
         height: 15px;
         width: 15px;
