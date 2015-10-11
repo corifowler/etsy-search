@@ -1,3 +1,3 @@
 ## Assignment 11
 
-* Recreate Etsy search page with results using jQuery and Underscsore
+* Recreate Etsy search page with results using jQuery and Underscore
